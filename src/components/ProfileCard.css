@@ -1,0 +1,70 @@
+/* src/components/ProfileCard.css */
+
+.profile-card {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #ffffff; /* White card background */
+    border: 2px solid #e0e0e0; /* Subtle border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Modern shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-photo {
+    width: 180px; /* Larger photo size */
+    height: 180px;
+    object-fit: cover; /* Ensure the image fits nicely */
+    border-radius: 15px 0 0 15px; /* Rounded corners for the left side */
+  }
+  
+  .profile-info {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #f0f0f0); /* Subtle gradient background */
+  }
+  
+  .profile-name {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    color: #2c3e50; /* Rich dark blue */
+    font-weight: bold;
+  }
+  
+  .profile-description {
+    color: #7f8c8d; /* Soft gray */
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.6; /* Improved readability */
+  }
+  
+  .profile-location {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    color: #2980b9; /* Vibrant blue for location */
+  }
+  
+  .location-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .location-coordinates {
+    color: #34495e; /* Slightly darker for contrast */
+  }
+  
+  /* Add subtle animation for smooth hover */
+  .profile-card:hover .profile-photo {
+    transform: scale(1.05); /* Slight zoom on photo hover */
+    transition: transform 0.3s ease;
+  }
+  

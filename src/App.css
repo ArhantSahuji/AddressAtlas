@@ -1,0 +1,21 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  width: 200px;
+}
+
+.profile-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-details {
+  text-align: center;
+}
